@@ -1,0 +1,17 @@
+# Combined requirements for all four pages.
+streamlit>=1.47
+numpy
+pandas
+scipy
+matplotlib
+seaborn
+altair
+plotly
+statsmodels
+# The frozen predictive models were saved with scikit-learn 1.7.1;
+# keep this pin so they load identically.
+scikit-learn==1.7.1
+joblib
+ortools>=9.8
+openpyxl
+pytest

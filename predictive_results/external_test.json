@@ -1,0 +1,83 @@
+{
+  "evaluated_utc": "2026-10-12T18:28:58.839959+00:00",
+  "n": 137,
+  "deaths": 24,
+  "data_sha256": "37a21fbbc2626131d318391af2e91c454316e18b11043175171b4b8d8a04a7a7",
+  "recalibration_applied": false,
+  "models": {
+    "primary": {
+      "model": "gradient_boosting",
+      "metrics": {
+        "roc_auc": 0.5735619469026549,
+        "average_precision": 0.21495666649649983,
+        "brier": 0.15796383611558373,
+        "calibration_intercept": -0.42669402144054264,
+        "calibration_slope": 0.3716733256917478
+      },
+      "ci": {
+        "roc_auc": {
+          "low": 0.45819188294786944,
+          "high": 0.6857871779987733,
+          "valid_replicates": 1000
+        },
+        "average_precision": {
+          "low": 0.1410029590872609,
+          "high": 0.3519564063240278,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "low": 0.11028764854298859,
+          "high": 0.21515092167163732,
+          "valid_replicates": 1000
+        },
+        "calibration_intercept": {
+          "low": -1.9229015572400467,
+          "high": 1.1961748106920345,
+          "valid_replicates": 1000
+        },
+        "calibration_slope": {
+          "low": -0.07399383142802357,
+          "high": 0.93883076421421,
+          "valid_replicates": 1000
+        }
+      }
+    },
+    "study": {
+      "model": "spline_lr",
+      "metrics": {
+        "roc_auc": 0.5274705014749262,
+        "average_precision": 0.1905728514309149,
+        "brier": 0.1460544621110572,
+        "calibration_intercept": -1.1944807665039197,
+        "calibration_slope": 0.2025763328399541
+      },
+      "ci": {
+        "roc_auc": {
+          "low": 0.40076295473034607,
+          "high": 0.6514409340659341,
+          "valid_replicates": 1000
+        },
+        "average_precision": {
+          "low": 0.12422128043533306,
+          "high": 0.2972501264777194,
+          "valid_replicates": 1000
+        },
+        "brier": {
+          "low": 0.10607380827088989,
+          "high": 0.193483430275126,
+          "valid_replicates": 1000
+        },
+        "calibration_intercept": {
+          "low": -3.2981002866855427,
+          "high": 0.9668231226921882,
+          "valid_replicates": 1000
+        },
+        "calibration_slope": {
+          "low": -0.9033764517207091,
+          "high": 1.573523294374074,
+          "valid_replicates": 1000
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "primary": {
+    "file": "1_primary_cohort.csv",
+    "sha256": "6ba4ebd256fa3b5f6c0d42444a3e6b9a4b90d6e493c9efdfedcb2ef7470d4b0f",
+    "rows": 110204,
+    "missing": 0,
+    "identical_rows": 108693,
+    "patient_id_available": false,
+    "ranges": {
+      "age_years": [
+        0,
+        100
+      ],
+      "sex_0male_1female": [
+        0,
+        1
+      ],
+      "episode_number": [
+        1,
+        5
+      ],
+      "hospital_outcome_1alive_0dead": [
+        0,
+        1
+      ]
+    },
+    "selected_model": "gradient_boosting",
+    "model_sha256": "28f74523266909e94bea21d9a3b93d8eedd4ace8f5fbcd1a6833851c5ac4168e",
+    "training_prevalence": 0.07354542484846285,
+    "internal_first_repeat": {
+      "roc_auc": 0.7054042882342566,
+      "average_precision": 0.13729263898871658,
+      "brier": 0.0657392349452835,
+      "calibration_intercept": 0.045396511350035355,
+      "calibration_slope": 1.0202179588878573
+    },
+    "internal_first_repeat_ci": {
+      "roc_auc": {
+        "low": 0.7001136047844001,
+        "high": 0.7102188894884653,
+        "valid_replicates": 1000
+      },
+      "average_precision": {
+        "low": 0.13264583304061187,
+        "high": 0.14200011037539273,
+        "valid_replicates": 1000
+      },
+      "brier": {
+        "low": 0.06458428231609725,
+        "high": 0.0669667536549557,
+        "valid_replicates": 1000
+      },
+      "calibration_intercept": {
+        "low": -0.04762251331679838,
+        "high": 0.1344228739576924,
+        "valid_replicates": 1000
+      },
+      "calibration_slope": {
+        "low": 0.9821102223380217,
+        "high": 1.0583745569788905,
+        "valid_replicates": 1000
+      }
+    }
+  },
+  "study": {
+    "file": "3_study_cohort.csv",
+    "sha256": "d3302756c0e16d78acf8f1ed7d9692afeafe02d5b224b5aa694598e1b7443001",
+    "rows": 19051,
+    "missing": 0,
+    "identical_rows": 17861,
+    "patient_id_available": false,
+    "ranges": {
+      "age_years": [
+        0,
+        100
+      ],
+      "sex_0male_1female": [
+        0,
+        1
+      ],
+      "episode_number": [
+        1,
+        5
+      ],
+      "hospital_outcome_1alive_0dead": [
+        0,
+        1
+      ]
+    },
+    "selected_model": "spline_lr",
+    "model_sha256": "4b4de7725a719f26d54bc11da363c583ecef7783a36de1c00edbb14779cfa2ea",
+    "training_prevalence": 0.1892814025510472,
+    "internal_first_repeat": {
+      "roc_auc": 0.5899644346577508,
+      "average_precision": 0.23207649664632068,
+      "brier": 0.1508378517958462,
+      "calibration_intercept": -0.02237525859067897,
+      "calibration_slope": 0.9840841170257935
+    },
+    "internal_first_repeat_ci": {
+      "roc_auc": {
+        "low": 0.5800638722659194,
+        "high": 0.5998148250338527,
+        "valid_replicates": 1000
+      },
+      "average_precision": {
+        "low": 0.2224008920811848,
+        "high": 0.2424652278425498,
+        "valid_replicates": 1000
+      },
+      "brier": {
+        "low": 0.14743055439862024,
+        "high": 0.15415435833882482,
+        "valid_replicates": 1000
+      },
+      "calibration_intercept": {
+        "low": -0.19733264141204276,
+        "high": 0.15459345266469657,
+        "valid_replicates": 1000
+      },
+      "calibration_slope": {
+        "low": 0.8628401835334153,
+        "high": 1.1059687306416834,
+        "valid_replicates": 1000
+      }
+    }
+  },
+  "protocol_sha256": "815af680381c2575aa13c6e9ab4054d0b6c903c2814169e6b7117c452cccee9d",
+  "completed_utc": "2026-10-12T18:28:39.708306+00:00",
+  "repeats": 10,
+  "bootstrap_repetitions": 1000
+}
