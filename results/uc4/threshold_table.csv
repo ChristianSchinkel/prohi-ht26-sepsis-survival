@@ -1,0 +1,5 @@
+Threshold,"Flagged per 1,000",Deaths captured (%),PPV (%),False alarms per death captured
+10%,911,96.7,20.1,4.0
+15%,803,89.3,21.0,3.8
+20%,548,65.1,22.5,3.4
+25%,24,3.5,27.0,2.7

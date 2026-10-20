@@ -1,0 +1,49 @@
+{
+  "n_study": 19051,
+  "deaths_study": 3606,
+  "auc_crossfit": 0.5892415378347695,
+  "auc_crossfit_ci": [
+    0.5794172310489125,
+    0.5989280816196083
+  ],
+  "auc_all_linear_terms": 0.590044541066497,
+  "auc_age_only": 0.5863297601009216,
+  "spearman_risk_age": 0.9111779724667538,
+  "auc_primary_cohort_crossfit": 0.7055857320421164,
+  "primary_under65_share": 0.41885049544481145,
+  "study_under65_share": 0.24308435252742638,
+  "primary_mortality": 0.07354542484846285,
+  "max_risk_under65": 0.17561837878883457,
+  "korea_deaths": 24,
+  "calibration_intercept": -8.913988698205901e-06,
+  "calibration_slope": 0.9809562463114838,
+  "observed_mortality": 0.1892814025510472,
+  "mean_predicted": 0.18928274661380035,
+  "n_korea": 137,
+  "auc_korea": 0.5337389380530974,
+  "korea_observed": 0.17518248175182483,
+  "korea_mean_predicted": 0.1504201973412482,
+  "risk_p10_p50_p90": [
+    0.1079319857699433,
+    0.20642009248142626,
+    0.24103187536689846
+  ],
+  "dca_max_gain": 0.02368366651956315,
+  "dca_max_gain_at": 0.19,
+  "dca_point_range": [
+    0.07,
+    0.25
+  ],
+  "dca_ci_range": [
+    0.07,
+    0.22
+  ],
+  "no_bay_constraint_cp_per_1000": 58.22633556276409,
+  "bay_rule_cost_per_1000": 3.0632438881665776,
+  "bay_rule_cost_ci": [
+    2.0944683710204988,
+    4.032019405312656
+  ],
+  "rrr_assumed": 0.15,
+  "runtime_seconds": 137.5
+}

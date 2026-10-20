@@ -6,16 +6,40 @@ Dataset: Sepsis Survival Minimal Clinical Records, UCI Machine Learning Reposito
 
 This dataset contains minimal clinical records for patients who were admitted to hospitals in Norway during 2011–2012. The goal is to predict the survival of these patients based on their clinical data.
 
-## Running the application
-
-On Windows, double-click [`run_windows.bat`](run_windows.bat). The project virtual environment must already exist at `.venv` with the required dependencies installed.
-
-On macOS/Linux, run:
-
-```bash
-./src/main.py
-```
-
 ## License
 
 The License had so be updated to that from the original dataset.
+
+## Running the app
+
+```bash
+python -m venv .venv
+source .venv/bin/activate        # Windows: .\.venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt
+python src/main.py               # or: streamlit run src/hello.py
+```
+
+Run from the repository root so `.streamlit/config.toml` (shared theme) is picked up.
+
+## App structure
+
+| Page | File | Analysis code | Owner |
+|---|---|---|---|
+| Home | `src/home.py` | – | Kai |
+| 1 · Descriptive | `src/pages/1_descriptive.py` | in the page | Christian |
+| 2 · Diagnostic | `src/pages/2_diagnostic.py` | `src/diagnostic/analysis.py` | Anupom |
+| 3 · Predictive | `src/pages/3_predictive.py` | `src/predictive/`, frozen models in `predictive_results/` | Tauska |
+| 4 · Prescriptive | `src/pages/4_prescriptive.py` | `src/prescriptive/uc4_prescriptive.py`, outputs in `results/uc4/` | Kevin |
+
+`src/hello.py` is the entry point and declares the navigation (`st.navigation`);
+shared paths and the sidebar footer are in `src/ui_common.py`. All pages read the
+datasets from `resources/sepsis_survival_dataset/`.
+
+## Tests
+
+```bash
+python -m pytest -q tests
+```
+
+`tests/test_navigation.py` opens every page from the entry point;
+`tests/test_app.py` and `tests/test_predictive.py` cover the predictive models.
