@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 """Application entry point for the sepsis survival project."""
 import os
 import subprocess
