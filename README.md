@@ -8,9 +8,11 @@ This dataset contains minimal clinical records for patients who were admitted to
 
 ## License
 
-The License had so be updated to that from the original dataset.
+The project is licensed under the terms in the [LICENSE](LICENSE) file.
 
 ## Running the app
+
+**Important:** Use Python 3.13. Python 3.14 or later is not supported.
 
 ```bash
 python -m venv .venv
